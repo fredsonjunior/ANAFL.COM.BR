@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ANAFL - Revenda e consultoria em Microsoft 365 e desenvolvimento de Agentes de Inteligência Artificial. Assinaturas oficiais, integração com Azure, automações inteligentes e suporte certificado.">
+    <meta name="keywords" content="Microsoft 365, assinaturas, Partner Center, agentes de IA, inteligência artificial, informática, revendedor autorizado, Office 365">
+    <title>ANAFL - Microsoft 365 & Agentes de IA | Parceiro Autorizado</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <script src="prefers-theme.js"></script>
+        <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#"><img src="anef_logo.png" alt="ANAFL" class="site-logo"></a>
+    <button class="menu-btn d-none d-md-inline" id="menu-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="nav-overlay"><i class="fas fa-bars"></i></button>
+    <button id="dark-toggle" class="menu-btn theme-toggle d-none d-md-inline ml-1" aria-label="Alternar modo escuro" aria-pressed="false" title="Alternar tema"><i class="fas fa-moon"></i></button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                <li class="nav-item"><a class="nav-link" href="#agentes">Agentes de IA</a></li>
+                <li class="nav-item"><a class="nav-link" href="#planos">Planos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Overlay navigation (desktop) -->
+    <div id="nav-overlay" class="nav-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="overlay-content">
+            <button id="nav-close" class="menu-btn" aria-label="Fechar menu"><i class="fas fa-times"></i></button>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#agentes">Agentes de IA</a>
+                <a href="#planos">Planos</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="display-4">Microsoft 365 e Agentes de IA com ANAFL</h1>
+            <p class="lead">Parceiro autorizado do Partner Center e especialistas em agentes de IA. Fornecemos assinaturas oficiais Microsoft 365, integração com Azure, automações inteligentes, segurança e suporte especializado para empresas.</p>
+            <a href="#planos" class="btn btn-primary btn-lg">Ver Planos</a>
+        </div>
+    </section>
+
+    <!-- Agentes de Inteligência Artificial (vendas) -->
+    <section id="agentes" class="section ai-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Agentes de Inteligência Artificial</h2>
+            <p class="text-center mb-4">Oferecemos agentes de IA prontos e customizados para atendimento, automação de processos, classificação e análise de dados, totalmente integrados ao Microsoft 365 e aos seus sistemas corporativos. Nossos agentes são treinados com dados controlados pelo cliente, mantêm compliance e privacidade, e dispõem de monitoramento, métricas e suporte profissional.</p>
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-8">
+                    <ul class="list-unstyled text-left plan-features">
+                        <li><strong>Integração:</strong> Microsoft Teams, Outlook, SharePoint, APIs e ERPs.</li>
+                        <li><strong>Treinamento:</strong> Fine-tuning e instruções com seus dados corporativos.</li>
+                        <li><strong>Privacidade:</strong> Retenção e políticas de dados, conformidade com LGPD/GDPR.</li>
+                        <li><strong>Escalabilidade:</strong> Arquitetura em Azure ou on-premise, com planos flexíveis.</li>
+                        <li><strong>Suporte:</strong> SLA, monitoramento, atualizações e melhorias contínuas.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center p-4">
+                        <h5>Starter</h5>
+                        <p class="price">R$ 199/mês</p>
+                        <ul class="plan-features list-unstyled">
+                            <li>Chatbot FAQ com respostas treinadas em seus dados</li>
+                            <li>Integração básica com Microsoft Teams e canais internos</li>
+                            <li>Relatórios mensais e monitoramento de interações</li>
+                            <li>Políticas de privacidade e conformidade iniciais</li>
+                        </ul>
+                        <a href="https://wa.me/5511941720901?text=Quero%20o%20Agente%20Starter" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Solicitar agente starter via WhatsApp">Solicitar</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center p-4">
+                        <h5>Profissional</h5>
+                        <p class="price">R$ 499/mês</p>
+                        <ul class="plan-features list-unstyled">
+                            <li>Automação de processos e integração de fluxos de trabalho (RPA leve)</li>
+                            <li>Integração completa com Microsoft 365: Teams, Outlook, SharePoint</li>
+                            <li>Personalização de prompts, logs e métricas detalhadas</li>
+                            <li>Treinamento em dados específicos da empresa e suporte à implementação</li>
+                        </ul>
+                        <a href="https://wa.me/5511941720901?text=Quero%20o%20Agente%20Profissional" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Solicitar agente profissional via WhatsApp">Solicitar</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center p-4 card-highlight">
+                        <div class="ribbon" style="position:absolute; right: 16px; top: 8px; background: #D4AF37; color: #fff; padding: 4px 10px; border-radius: 4px; font-weight:700;">Mais vendido</div>
+                        <h5>Enterprise</h5>
+                        <p class="price">Sob consulta</p>
+                        <ul class="plan-features list-unstyled">
+                            <li>Customização completa e integração com APIs, ERPs e sistemas internos</li>
+                            <li>Opções de implantação em Azure ou híbrida (on-premise)</li>
+                            <li>SLAs dedicados, monitoramento em tempo real e painel de analytics</li>
+                            <li>Treinamento avançado, MLOps e governança de dados</li>
+                        </ul>
+                        <a href="https://wa.me/5511941720901?text=Quero%20o%20Agente%20Enterprise" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Solicitar demo do agente enterprise via WhatsApp">Solicitar Demo</a>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-4 text-muted text-center small">Todos os planos incluem suporte e atualizações periódicas. Implementação e pricing variam conforme o escopo.</p>
+        </div>
+    </section>
+
+    <!-- Sobre a Parceria -->
+    <section id="sobre" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Sobre Nossa Parceria com o Partner Center</h2>
+            <p class="text-center">Como revendedor autorizado da Microsoft, oferecemos assinaturas oficiais do Microsoft 365 com benefícios exclusivos: preços competitivos, suporte técnico 24/7, treinamentos gratuitos e integração com Azure e Dynamics 365. Além disso, desenvolvemos e integramos agentes de Inteligência Artificial para automação de atendimento, análise de dados e fluxos inteligentes, com foco em privacidade, segurança e conformidade.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+                    <h5>Segurança Certificada</h5>
+                    <p>Proteção de dados com criptografia e compliance com GDPR.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-users fa-3x text-success mb-3"></i>
+                    <h5>Suporte Especializado</h5>
+                    <p>Equipe treinada para migração e implementação.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-award fa-3x text-warning mb-3"></i>
+                    <h5>Certificações Microsoft</h5>
+                    <p>Gold Partner em Cloud Productivity e mais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="section">
+        <div class="container">
+            <h2 class="text-center mb-4">Nossos Serviços em Informática</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card p-4">
+                        <h5><i class="fas fa-cloud"></i> Consultoria em Nuvem</h5>
+                        <p>Migração para Microsoft 365, otimização de custos e integração com Azure e serviços gerenciados.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4">
+                        <h5><i class="fas fa-tools"></i> Suporte Técnico</h5>
+                        <p>Manutenção de PCs, redes e software, com SLAs claros, monitoramento e suporte remoto/on-site.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4">
+                        <h5><i class="fas fa-robot"></i> Agentes de IA</h5>
+                        <p>Desenvolvimento e integração de agentes inteligentes (chatbots, assistentes, automações) conectados ao Microsoft 365, com treinamento em seus dados, privacidade e conformidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planos -->
+    <section id="planos" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Planos de Assinaturas Microsoft 365 e Serviços de IA</h2>
+            <p class="text-center mb-3 plan-intro">Oferecemos planos de Microsoft 365 com opções de integração para Agentes de IA e soluções sob medida — fale conosco para adaptar o plano às necessidades da sua empresa.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center p-4">
+                        <h5>Personal</h5>
+                        <p class="price">R$ 29,99/mês</p>
+                        <p>1 usuário, 1 TB OneDrive, apps Office.</p>
+                        <a href="https://www.microsoft.com/pt-br/microsoft-365/buy" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center p-4">
+                        <h5>Family</h5>
+                        <p class="price">R$ 49,99/mês</p>
+                        <p>Até 6 usuários, 6 TB OneDrive, Teams.</p>
+                        <a href="https://www.microsoft.com/pt-br/microsoft-365/buy" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center p-4">
+                        <h5>Business</h5>
+                        <p class="price">R$ 99/mês</p>
+                        <p>Para empresas, Exchange, SharePoint.</p>
+                        <p class="small text-muted">Integração com agentes de IA e automações disponível mediante configuração.</p>
+                        <a href="https://www.microsoft.com/pt-br/microsoft-365/buy" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="section">
+        <div class="container">
+            <h2 class="text-center mb-4">O que Nossos Clientes Dizem</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <p>"A ANAFL nos ajudou a migrar para Microsoft 365 com zero downtime. Suporte incrível!"</p>
+                        <cite>- Empresa XYZ</cite>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <p>"Como parceiro, eles oferecem preços justos e treinamentos gratuitos. Recomendo!"</p>
+                        <cite>- João Silva, Freelancer</cite>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <p>"Os agentes de IA criados pela ANAFL automatizaram nosso atendimento e reduziram tempo de resposta. Excelente integração com o Teams."</p>
+                        <cite>- Empresa ABC</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Perguntas Frequentes</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne">Como funciona a parceria com o Partner Center?</button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-parent="#faqAccordion">
+                        <div class="card-body">Somos revendedores autorizados, garantindo licenças oficiais e suporte direto da Microsoft.</div>
+                    </div>
+                </div>
+                <!-- Adicione mais FAQs aqui -->
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo">Como os agentes de IA tratam dados sensíveis e privacidade?</button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-parent="#faqAccordion">
+                        <div class="card-body">Nossos agentes de IA são configurados para seguir políticas de privacidade e conformidade. Podemos aplicar retenção de dados, anonimização, e limitar o uso de dados sensíveis. Implementamos controles de acesso e criptografia quando necessário.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section">
+        <div class="container text-center">
+            <h2 class="mb-4">Entre em Contato</h2>
+            <p class="mb-4">Fale conosco pelo WhatsApp para suporte, vendas e demonstrações sobre Microsoft 365 e Agentes de Inteligência Artificial.</p>
+            <a href="https://wa.me/5511941720901?text=Olá%20ANAFL,%20gostaria%20de%20mais%20informações%20sobre%20Microsoft%20365%20e%20Agentes%20de%20IA" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp fa-2x"></i><br>
+                Falar pelo WhatsApp
+            </a>
+            <p class="mt-3 text-muted">Resposta em até 24 horas. Atendimento de segunda a sexta, 9h às 18h.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-col">
+                    <h5>ANAFL</h5>
+                    <p class="small text-muted">Revenda e consultoria em Microsoft 365 e Agentes de Inteligência Artificial. Integração, automações e suporte profissional.</p>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <h5>Contato</h5>
+                    <p class="small">Telefone: (11) 94172-0901<br>Email: anaflsuporte@gmail.com</p>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <h5>Siga-nos</h5>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.06)">
+            <div class="row">
+                <div class="col-12 text-center small">&copy; 2025 ANAFL. Todos os direitos reservados.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

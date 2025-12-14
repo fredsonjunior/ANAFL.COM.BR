@@ -1,0 +1,287 @@
+:root{
+    --brand-blue: #4169E1;
+    --brand-gold: #D4AF37;
+    --brand-dark: #002366;
+    --text-color: #222;
+    --muted: #6c757d;
+    --border-radius: 8px;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --footer-bg: #0a0a0a;
+}
+
+/* Dark mode overrides applied when body has .dark-mode */
+.dark-mode{
+    --bg: #07070a;
+    --text-color: #e9eef8;
+    --card-bg: #0f1720;
+    --footer-bg: #050505;
+    --brand-blue: #2f59c9; /* color prior to royal blue change */
+    --muted: rgba(255,255,255,0.88);
+    --muted-soft: rgba(255,255,255,0.72);
+} 
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--text-color);
+}
+
+/* Ensure the main 'Sobre' paragraph uses black text in light mode */
+#sobre p { color: #000 !important; }
+
+/* Ensure Planos intro text uses black in light mode */
+#planos .plan-intro { color: #000 !important; }
+.navbar {
+    background-color: #4169E1; /* azul royal */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative; /* enable absolute positioning of menu btn */
+}
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+.hero {
+    background: linear-gradient(135deg, rgba(65,105,225,0.88) 0%, rgba(212,175,55,0.88) 100%), url('https://source.unsplash.com/featured/?technology,office') no-repeat center/cover;
+    background-blend-mode: multiply;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    animation: fadeIn 2s;
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.btn-primary {
+    background-color: var(--brand-blue) !important;
+    border-color: var(--brand-blue) !important;
+    color: #fff !important;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: transform 0.12s ease, background-color 0.12s ease;
+    box-shadow: 0 4px 12px rgba(65,105,225,0.12);
+}
+.btn-primary:hover {
+    transform: translateY(-2px);
+    background-color: var(--brand-gold) !important; /* ouro */
+    border-color: var(--brand-gold) !important;
+    color: #0a0a0a !important;
+}
+.btn-whatsapp{
+    background-color: var(--brand-gold) !important;
+    border-color: var(--brand-gold) !important;
+    color: #0a0a0a !important;
+    transition: background-color 420ms cubic-bezier(.2,.9,.2,1), color 320ms ease, transform 160ms ease, box-shadow 320ms ease;
+    box-shadow: 0 6px 18px rgba(212,175,55,0.12);
+}
+/* Hover/Focus animation: change smoothly to brand blue (Microsoft 365 style feel) */
+.btn-whatsapp:hover,
+.btn-whatsapp:focus {
+    background-color: var(--brand-blue) !important;
+    border-color: var(--brand-blue) !important;
+    color: #ffffff !important;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(65,105,225,0.14);
+}
+.dark-mode .btn-whatsapp { color: #0a0a0a !important; }
+.dark-mode .btn-whatsapp:hover, .dark-mode .btn-whatsapp:focus { color: #ffffff !important; }
+.section {
+    padding: 60px 0;
+}
+.card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.dark-mode .hero{
+    background: linear-gradient(135deg, rgba(11,14,24,0.9) 0%, rgba(30,30,30,0.9) 100%), url('https://source.unsplash.com/featured/?technology,office') no-repeat center/cover;
+    background-blend-mode: multiply;
+    color: #fff;
+}
+.dark-mode .text-muted { color: var(--muted-soft) !important; }
+.dark-mode .card { border: 1px solid rgba(255,255,255,0.03); box-shadow: 0 6px 18px rgba(0,0,0,0.6); }
+.dark-mode footer .small { color: rgba(255,255,255,0.6); }
+.dark-mode p, .dark-mode li, .dark-mode td, .dark-mode th { color: var(--muted) !important; }
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6 { color: var(--brand-gold) !important; }
+.dark-mode .lead { color: var(--muted-soft) !important; }
+.dark-mode .plan-features li { color: var(--muted) !important; }
+.dark-mode a { color: var(--brand-gold) !important; }
+.dark-mode .nav-link { color: var(--brand-gold) !important; }
+.dark-mode .testimonial { background-color: rgba(255,255,255,0.02); color: var(--muted) !important; border-left-color: rgba(65,105,225,0.1); }
+.dark-mode .card { background-color: var(--card-bg) !important; color: var(--text-color) !important; }
+.dark-mode .price { color: var(--brand-gold) !important; }
+/* Ensure small/subtext inside cards and testimonials use muted color */
+.dark-mode .card .small, .dark-mode .card .text-muted, .dark-mode .testimonial cite { color: var(--muted-soft) !important; }
+/* Ensure lead and plan feature descriptions are readable in dark mode */
+.dark-mode .lead { color: var(--muted-soft) !important; font-weight: 400; }
+.dark-mode .plan-features li { color: var(--muted) !important; }
+.dark-mode .text-muted, .dark-mode .small { color: var(--muted-soft) !important; }
+/* Dark mode: maintain muted for sobre paragraph and white for plan intro */
+.dark-mode #sobre p { color: var(--muted-soft) !important; }
+/* Specific: keep the main paragraph in #sobre black even in dark mode */
+.dark-mode #sobre > .container > p.text-center { color: #000 !important; }
+.dark-mode .site-logo { filter: brightness(1.1) contrast(1.05); }
+/* Make the descriptions in the "Sobre" section black in dark mode */
+.dark-mode #sobre .col-md-4 p { color: #000 !important; }
+/* Make the descriptions in the "Planos" section white in dark mode (except price) */
+.dark-mode #planos p:not(.price) { color: #ffffff !important; }
+.dark-mode #planos .text-muted, .dark-mode #planos .small { color: #ffffff !important; }
+
+/* Make sales descriptions (Planos, Agentes) white in dark mode for maximum contrast */
+.dark-mode #agentes p,
+.dark-mode #agentes .plan-features li,
+.dark-mode #planos p:not(.price),
+.dark-mode #planos .plan-features li,
+.dark-mode #planos .text-muted,
+.dark-mode #planos .small {
+    color: #ffffff !important;
+}
+
+/* Specific overrides: force the Sobre description to black and keep Plan intro black in dark mode */
+.dark-mode #sobre .col-md-4 p { color: #000 !important; }
+.dark-mode #planos .plan-intro { color: #000 !important; }
+/* Extra specific selector to ensure plan-intro is black (falls back if other selectors win) */
+.dark-mode #planos p.plan-intro { color: #000 !important; }
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+.testimonial {
+    background-color: #f8f9fa;
+    padding: 22px;
+    border-radius: 8px;
+    border-left: 4px solid rgba(65,105,225,0.06);
+}
+footer {
+    background-color: var(--footer-bg); /* dark footer */
+    color: white;
+    padding: 48px 0;
+}
+footer .footer-col{ margin-bottom: 10px; }
+footer a{ color: #dcdcdc; }
+footer a:hover{ color: var(--brand-gold); text-decoration: none; }
+/* substituir classes de utilitários verdes/amarelos por tons desejados */
+.text-success { color: #4169E1 !important; } /* ícones/elementos que usavam sucesso agora azul royal */
+.text-warning { color: #D4AF37 !important; } /* detalhes dourados */
+.social-icons a {
+    color: #dcdcdc;
+    margin: 0 10px;
+    font-size: 20px;
+}
+.site-logo {
+    height: 32px;
+    width: auto;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.brand-cursive {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5rem; /* ligeiramente maior para legibilidade */
+    line-height: 1.1;
+    display: inline-block;
+    vertical-align: middle;
+    color: inherit;
+    margin-left: 6px;
+    letter-spacing: 0.06em; /* aumentar espaçamento entre letras */
+    word-spacing: 0.08em; /* aumentar espaçamento entre palavras */
+    /* opção leve de sombra para melhorar contraste sobre fundos claros/variados */
+    text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+}
+/* Overlay menu (desktop hide navbar links and show overlay) */
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.85);
+    color: white;
+    z-index: 2000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.nav-overlay.open { display: flex; }
+.nav-overlay .overlay-content { text-align: center; }
+.nav-overlay .overlay-content a { display: block; color: white; font-size: 1.5rem; margin: 12px 0; }
+.menu-btn { color: white; border: none; background: transparent; font-size: 1.25rem; }
+/* Desktop: hide nav links, show menu button */
+@media (min-width: 768px) {
+    .navbar-nav { display: none !important; }
+    .navbar .menu-btn { display: inline-block; position: absolute; right: 16px; top: 12px; z-index: 2100; }
+    .navbar .navbar-toggler { display: none; }
+}
+/* Dark-mode toggle position (to the left of menu icon) */
+.navbar #dark-toggle { right: 58px; top: 12px; position: absolute; z-index: 2101; }
+/* Toggle icon coloring */
+#dark-toggle i { color: rgba(255,255,255,0.95); }
+.dark-mode #dark-toggle i.fas.fa-sun { color: var(--brand-gold); }
+/* Minimalist theme toggle */
+.theme-toggle{
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.06);
+    padding: 0;
+    font-size: 0.95rem;
+    transition: background-color 120ms ease, transform 80ms ease;
+}
+.theme-toggle:hover,
+.theme-toggle:focus{
+    background: rgba(255,255,255,0.12);
+    transform: translateY(-2px);
+    outline: none;
+}
+.dark-mode .theme-toggle{
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+}
+#dark-toggle i { font-size: 0.95rem; }
+/* Mobile: hide menu btn, keep normal collapse */
+@media (max-width: 767.98px) {
+    .navbar .menu-btn { display: none; }
+}
+/* Estilos para seção de Agentes de IA */
+.ai-section .card-highlight {
+    border: 2px solid #D4AF37; /* destaque ouro */
+    box-shadow: 0 6px 18px rgba(212,175,55,0.12);
+    position: relative; /* para o ribbon absoluto */
+    overflow: visible;
+}
+.ai-section .price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #4169E1; /* azul royal */
+}
+.ai-section .plan-features {
+    text-align: left;
+    margin: 12px 0 18px 0;
+}
+.ai-section .card { position: relative; }
+.ai-section .card-highlight h5 { color: #D4AF37; }
+.ai-section .card-highlight .btn-primary { background-color: #D4AF37; border-color: #D4AF37; }
+
+/* Reveal animation for agents & planos cards (slower) */
+.ai-section .card, #planos .card {
+    transform: translateY(22px) scale(0.98);
+    opacity: 0;
+    transition: transform 900ms cubic-bezier(.2,.9,.2,1), opacity 900ms ease;
+}
+.ai-section .card.revealed, #planos .card.revealed {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+/* Stagger helpers (slower, 180ms step) */
+.ai-section .card[data-index="0"], #planos .card[data-index="0"] { transition-delay: 0ms; }
+.ai-section .card[data-index="1"], #planos .card[data-index="1"] { transition-delay: 180ms; }
+.ai-section .card[data-index="2"], #planos .card[data-index="2"] { transition-delay: 360ms; }
+.ai-section .card[data-index="3"], #planos .card[data-index="3"] { transition-delay: 540ms; }
+.ai-section .card[data-index="4"], #planos .card[data-index="4"] { transition-delay: 720ms; }
+.ai-section .card[data-index="5"], #planos .card[data-index="5"] { transition-delay: 900ms; }
+.ai-section .card[data-index="6"], #planos .card[data-index="6"] { transition-delay: 1080ms; }
+.ai-section .card[data-index="7"], #planos .card[data-index="7"] { transition-delay: 1260ms; }
+
